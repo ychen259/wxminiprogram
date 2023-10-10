@@ -1,0 +1,6 @@
+/* pages/message/message.wxss */
+
+.box{
+  height:2000rpx;
+  background-color: lightblue;
+}

@@ -1,0 +1,4 @@
+<!--pages/info/info.wxml-->
+<navigator open-type="navigateBack" delta="1"><button type="primary">上一页</button></navigator>
+
+<button type="primary" bindtap="goBack">上一页2</button>

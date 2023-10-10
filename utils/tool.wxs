@@ -1,0 +1,17 @@
+function toLower(str){
+  return str.toLowerCase();
+}
+
+function splitPhone(number){
+  if(number.length != 11) return number;
+
+  var arr = number.split('');
+  arr.splice(3, 0, '-');
+  arr.splice(8, 0, '-');
+  return arr.join('');
+}
+
+module.exports = {
+  toLower: toLower,
+  splitPhone: splitPhone
+}
