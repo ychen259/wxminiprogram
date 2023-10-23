@@ -4,7 +4,8 @@
     "pages/message/message",
     "pages/contact/contact",
     "pages/info/info",
-    "pages/shopList/shopList"
+    "pages/shopList/shopList",
+    "pages/test/test"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,6 +14,7 @@
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -32,8 +34,25 @@
         "iconPath": "/images/contact.png",
         "selectedIconPath": "/images/contact-active.png"
       }
+      ,
+      {
+        "pagePath": "pages/test/test",
+        "text": "test",
+        "iconPath": "/images/contact.png",
+        "selectedIconPath": "/images/contact-active.png"
+      }
     ]
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "my-test1": "/components/test1/test",
+    "my-test2": "/components/test2/test",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
 }
+  
+

@@ -6,7 +6,8 @@ Page({
    */
   data: {
     swiperList: [],
-    gridList:[]
+    gridList:[],
+    asyncSwiperList:[]
   },
 
   getSwiperList(){
@@ -19,6 +20,15 @@ Page({
         })
       }
     })
+  },
+
+  async asyncGetSwiperList(){
+    const res = await wx.p.request({
+      url:"https://applet-base-api-t.itheima.net/slides",
+      method:"GET",
+    });
+
+    this.setData({asyncSwiperList: res.data });
   },
 
   getGridList(){
@@ -51,6 +61,7 @@ Page({
     console.log("On Loadding");
     this.getSwiperList();
     this.getGridList();
+    this.asyncGetSwiperList();
   },
 
   /**

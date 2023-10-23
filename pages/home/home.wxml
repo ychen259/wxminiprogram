@@ -1,6 +1,12 @@
 <!--pages/home/home.wxml-->
 
 <swiper indicator-dots circular autoplay>
+  <swiper-item wx:for="{{asyncSwiperList}}" wx:key="id">
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+</swiper>
+
+<swiper indicator-dots circular autoplay>
   <swiper-item wx:for="{{swiperList}}" wx:key="id">
     <image src="{{item.image}}"></image>
   </swiper-item>
@@ -18,3 +24,11 @@
 
   <image src="/images/glgs.jpg" mode="widthFix"></image>
 </view>
+
+<navigator url="/pages/test/test" open-type="switchTab">
+<van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">
+  test
+</van-button></navigator>
+
+<van-button type="primary">primary</van-button>
+

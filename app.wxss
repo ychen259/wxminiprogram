@@ -8,3 +8,12 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.g-red-text{
+  color: red;
+}
+
+page{
+  --button-primary-color: black;
+  --button-primary-background-color: #13a7a0;
+}

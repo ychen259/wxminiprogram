@@ -1,0 +1,19 @@
+<!--components/test2/test.wxml-->
+<view style="background-color:rgb({{fullColor}});" class="colorBox">颜色值：{{fullColor}}</view>
+
+<button size="mini" bindtap="changeR" type="default">R</button>
+<button size="mini" bindtap="changeG" type="primary">G</button>
+<button size="mini" bindtap="changeB" type="warn">B</button>
+
+<navigator open-type="navigateBack"><button> back</button></navigator>
+
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>这里是组件内部节点s</view>
+  <slot name="after"></slot>
+</view>
+
+<view>子组件count：{{count}}</view>
+<button bindtap="addCount">count+1</button>
+
+<view>在behavior定义的username: {{username}}</view>
